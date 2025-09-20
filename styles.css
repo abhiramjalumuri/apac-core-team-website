@@ -22,6 +22,7 @@ body {
     background-color: var(--light);
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
+    font-size: 22px; /* Further increased for better content visibility */
 }
 
 /* Container for centering content */
@@ -33,12 +34,12 @@ body {
 
 /* Sidebar styling */
 .sidebar {
-    width: 280px;
+    width: 350px; /* Increased width for better menu display */
     background: linear-gradient(135deg, var(--primary-dark), var(--primary));
     color: white;
     position: fixed;
     height: 100vh;
-    padding: 20px;
+    padding: 40px; /* Increased padding */
     box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -48,13 +49,76 @@ body {
 
 .logo {
     text-align: center;
-    padding: 20px 0;
-    margin-bottom: 30px;
+    padding: 25px 0; /* Increased padding for better spacing */
+    margin-bottom: 35px; /* Increased margin */
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.company-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Increased gap for better spacing */
+}
+
+.plume-logo {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.plume-logo-img {
+    width: 120px;
+    height: auto;
+    max-height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+    background: white;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.plume-brand {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.logo-img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.apac-branding h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #fff, #cce0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 15px 0; /* Increased bottom margin for better spacing with much larger subtitle */
+}
+
+.apac-branding span {
+    font-size: 2.4rem; /* Significantly increased for excellent visibility */
+    color: rgba(255, 255, 255, 1); /* Full opacity for maximum visibility */
+    font-weight: 700; /* Bold weight for strong presence */
+    font-family: 'Poppins', sans-serif; /* Added same font family as h1 */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Added text shadow for better visibility */
+}
+
 .logo h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 700;
     background: linear-gradient(to right, #fff, #cce0ff);
     -webkit-background-clip: text;
@@ -73,18 +137,19 @@ body {
 }
 
 .nav-links li {
-    margin-bottom: 12px;
+    margin-bottom: 18px; /* Increased spacing between menu items */
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 20px 25px; /* Increased padding for better clickable area */
     display: flex;
     align-items: center;
     border-radius: 8px;
     transition: var(--transition);
     font-weight: 500;
+    font-size: 1.3rem; /* Increased font size */
     position: relative;
     overflow: hidden;
 }
@@ -129,7 +194,7 @@ body {
 /* Main content styling */
 .main-content {
     flex: 1;
-    margin-left: 280px;
+    margin-left: 350px; /* Updated to match new sidebar width */
     padding: 0;
     transition: var(--transition);
 }
@@ -166,14 +231,14 @@ body {
 }
 
 .section-title {
-    font-size: 3rem;
-    margin-bottom: 30px;
-    color: var(--primary);
-    position: relative;
-    padding-bottom: 15px;
+    font-size: 3.6rem; /* Further increased for better visibility */
     font-weight: 700;
-    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
     text-align: center;
+    color: var(--primary);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    padding-bottom: 20px;
 }
 
 .section-title::after {
@@ -189,7 +254,7 @@ body {
 }
 
 .section-content {
-    font-size: 1.1rem;
+    font-size: 1.6rem; /* Further increased for better readability */
     line-height: 1.8;
     color: var(--dark);
     text-align: center;
@@ -197,7 +262,7 @@ body {
 
 /* Core APAC section */
 .core-intro {
-    font-size: 1.3rem;
+    font-size: 1.9rem; /* Further increased for better content visibility */
     margin-bottom: 30px;
     color: var(--gray);
     font-weight: 500;
@@ -238,13 +303,14 @@ body {
 .feature h3 {
     color: var(--primary);
     margin-bottom: 15px;
-    font-size: 1.4rem;
+    font-size: 1.6rem; /* Increased for better visibility */
     font-family: 'Poppins', sans-serif;
 }
 
 .feature p {
     color: var(--gray);
     line-height: 1.6;
+    font-size: 1.3rem; /* Increased for better content fitting */
 }
 
 /* Project sections */
@@ -259,7 +325,7 @@ body {
 .project-details h3 {
     color: var(--primary);
     margin: 25px 0 15px;
-    font-size: 1.5rem;
+    font-size: 1.9rem; /* Increased for better visibility */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -292,9 +358,9 @@ body {
 .tech-tag {
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     color: white;
-    padding: 5px 15px;
+    padding: 10px 20px; /* Increased padding */
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 1.1rem; /* Increased font size */
 }
 
 /* Team section */
@@ -359,8 +425,8 @@ body {
 .progress-container {
     position: fixed;
     top: 0;
-    left: 280px;
-    width: calc(100% - 280px);
+    left: 350px; /* Updated to match new sidebar width */
+    width: calc(100% - 350px);
     height: 5px;
     background: transparent;
     z-index: 1001;
@@ -413,20 +479,20 @@ body {
 
 @media (max-width: 992px) {
     .sidebar {
-        width: 220px;
+        width: 280px; /* Adjusted for medium screens */
     }
     
     .main-content {
-        margin-left: 220px;
+        margin-left: 280px;
     }
     
     .progress-container {
-        left: 220px;
-        width: calc(100% - 220px);
+        left: 280px;
+        width: calc(100% - 280px);
     }
     
     .section-title {
-        font-size: 2.5rem;
+        font-size: 2.8rem; /* Adjusted for medium screens */
     }
     
     .feature {
@@ -437,13 +503,14 @@ body {
 @media (max-width: 768px) {
     body {
         flex-direction: column;
+        font-size: 20px; /* Increased for mobile */
     }
     
     .sidebar {
         width: 100%;
         height: auto;
         position: relative;
-        padding: 15px;
+        padding: 20px; /* Increased padding for mobile */
     }
     
     .main-content {
@@ -459,15 +526,16 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 5px;
+        gap: 8px; /* Increased gap */
     }
     
     .nav-links li {
-        margin: 5px;
+        margin: 8px; /* Increased margin */
     }
     
     .nav-links a {
-        padding: 10px 15px;
+        padding: 12px 18px; /* Increased padding */
+        font-size: 1.1rem; /* Increased font size */
     }
     
     .section {
@@ -475,7 +543,11 @@ body {
     }
     
     .section-title {
-        font-size: 2.2rem;
+        font-size: 2.8rem; /* Increased for mobile */
+    }
+    
+    .section-content {
+        font-size: 1.4rem; /* Increased for mobile */
     }
     
     .features {
