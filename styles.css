@@ -333,19 +333,12 @@ body {
 .project-details ul {
     padding-left: 20px;
     margin-bottom: 20px;
+    list-style: disc;
 }
 
 .project-details li {
     margin-bottom: 10px;
     position: relative;
-    padding-left: 20px;
-}
-
-.project-details li::before {
-    content: '▹';
-    position: absolute;
-    left: 0;
-    color: var(--secondary);
 }
 
 .tech-tags {
@@ -431,6 +424,7 @@ body {
     height: 5px;
     background: transparent;
     z-index: 1001;
+    text-color:black;
 }
 
 .progress-bar {
